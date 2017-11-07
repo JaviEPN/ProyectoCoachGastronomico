@@ -8,3 +8,27 @@ $(document).ready(function() {
 		}
 	});
 });
+
+function mostrarModalRepetidamente() {
+  
+}
+
+function reFresh()
+{
+  $("#mostrarmodal").modal("show");
+}
+function reset()
+{
+  window.clearInterval(repeticion);
+  repeticion = window.setInterval("reFresh()",30000);  
+}
+
+var repeticion = window.setInterval("reFresh()",30000);
+
+
+
+
+
+
+
+      

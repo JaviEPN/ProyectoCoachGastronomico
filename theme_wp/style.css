@@ -31,6 +31,22 @@ a {
 a:hover {
 	text-decoration: none;
 }
+/*--Modal que se repite---*/
+
+#mostrarmodal .modal-dialog  {
+border-style: solid; 
+    border-width: 8px;
+    border-color: white;
+}
+#mostrarmodal .modal-dialog .modal-content .modal-header  {
+background-color: rgb(254,159,0);
+font-family: "Trebuchet MS", cursive, sans-serif;
+}
+#mostrarmodal .modal-dialog .modal-content .modal-header h1{
+color: white;
+font-weight: bold;
+text-align: center;
+}
 /*--Header---*/
 header {
 
