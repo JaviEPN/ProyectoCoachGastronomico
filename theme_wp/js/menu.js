@@ -20,7 +20,7 @@ function reFresh()
 function reset()
 {
   window.clearInterval(repeticion);
-  repeticion = window.setInterval("reFresh()",30000);  
+  repeticion = window.setInterval("reFresh()",3000);  
 }
 
 var repeticion = window.setInterval("reFresh()",30000);
