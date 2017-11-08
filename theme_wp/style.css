@@ -282,3 +282,12 @@ font-size: 20pt;
 	max-height: 500px;
 }
 
+#main #articles_list #cat_name {
+	font-family: Impact;
+	font-size: 18pt;
+	color: #333333;
+	font-weight: 500;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #333333;
+}
+
