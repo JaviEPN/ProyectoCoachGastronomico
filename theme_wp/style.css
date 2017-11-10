@@ -131,11 +131,15 @@ header nav {
     background-image: -moz-linear-gradient(top center, #FFF, #CCC);/*Para Firefox*/
     background-image: -o-linear-gradient(top, #FFF, #CCC);/*Para Opera*/
     background-image: linear-gradient(top, #FFF, #CCC);/*El estandar por defecto*/
+
     overflow:hidden;
     border-style: double; 
     border-width: 1px;
     border-color: rgb(238,238,238);
 
+}
+.menu_bar {
+	display: none;
 }
 header nav ul {
 	
@@ -145,6 +149,8 @@ header nav ul {
             /* AÑADIMOS */
             position: relative; 
             left: 50%;
+
+
 	
 }
 header nav ul li {
@@ -289,5 +295,76 @@ font-size: 20pt;
 	font-weight: 500;
 	margin-bottom: 30px;
 	border-bottom: 1px solid #333333;
+}
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?dipnwf');
+  src:  url('fonts/icomoon.eot?dipnwf#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?dipnwf') format('truetype'),
+    url('fonts/icomoon.woff?dipnwf') format('woff'),
+    url('fonts/icomoon.svg?dipnwf#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+  content: "\e9bd";
+}
+@media screen and (max-width: 800px){
+	header nav {
+		width: 100%;
+		height: 80%;
+		position: static;
+	}
+
+	header nav ul li {
+		display: block;
+		align-content: left;
+		float: none;
+		border-bottom: 1px solid rgba(255,255,255, .3);
+	}
+	.menu_bar {
+		display: block;
+		width: 100%;
+		background: #ccc;
+	}
+	.menu_bar .btn-menu {
+		display: block;
+		padding: 20px;
+		background: #024949;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 20px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+	.menu_bar .btn-menu span {
+		float: right;
+		font-size: 40px;
+	}
+	#main #slideshow {
+	margin-top: 0px;
+	text-align: left;
+
+}
+}
+
+
 }
 

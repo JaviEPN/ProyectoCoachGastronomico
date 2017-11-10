@@ -7,11 +7,28 @@ $(document).ready(function() {
 			$('.menu').removeClass('menu-fixed');
 		}
 	});
+
+
+var contador =1;
+$('.menu_bar').click(function() {
+
+		//$('nav').toggle();
+		if (contador==1){
+			$('nav').animate({
+				top: '0'
+			});
+			contador = 0;
+			$('#slideshow').addClass('menuslide-fixed');
+		} else {
+			contador = 1;
+			$('nav').animate({
+				top: '-100%'
+			});
+			$('#slideshow').removeClass('menuslide-fixed');
+		}
+	});
 });
 
-function mostrarModalRepetidamente() {
-  
-}
 
 function reFresh()
 {
