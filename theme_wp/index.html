@@ -13,6 +13,7 @@
 	<script src="js/jquery.slides.min.js" type="text/javascript"></script>
 	<script src="js/menu.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
       <style type="text/css">
@@ -22,7 +23,8 @@
 .color-blue{color: #0080c5;}
 .color-twitter{color:#00aced;}
 .color-facebook{color:#00539f;}
-.color-linkedin{color:#0176b5;}
+.color-youtube{color:red;}
+.color-orange{color: rgb(254,159,0);}
 
 /*NAVBAR STYLES*/
 
@@ -36,14 +38,14 @@
 	}
 .login-panel { 
     min-width: 250px; 
-    border-top: 14px solid #0080c5;
-    border-right: 1px solid #0080c5;
+    border-top: 14px solid rgb(254,159,0);
+    border-right: 1px solid rgb(254,159,0);
     border-bottom-right-radius:0.5em;
-    -moz-border-radius-bottomright:0.5em;
-    border-bottom: 3px solid #0080c5;
-    border-left: 1px solid #0080c5;
+    -moz-border-radius-bottom-right:0.5em;
+    border-bottom: 3px solid rgb(254,159,0);;
+    border-left: 1px solid rgb(254,159,0);;
     border-bottom-left-radius:0.5em;
-    -moz-border-radius-bottomleft:0.5em;
+    -moz-border-radius-bottom-left:0.5em;
     }
 .dropdown-header { display: block !imnportant; padding-bottom: 30px; height: 10px; }
 .login-header { font-size: 20px; font-weight: bold; display: inline; float: left; }
@@ -67,7 +69,7 @@
               <h3>Gracias por estar por aquí.</h3>
               <h3>No te vayas con la manos vacias...</h3>
               <div class="trans"> 
-  				<button class="btn btn-info btn-responsive btninter centrado">Obten tu ebook, de como emprender exitosamente.</button> 
+  				<button class="btn btn-info btn-responsive">Obten tu ebook</button> 
 			  </div> 
 			  <h3></h3>
 			  <h3></h3>
@@ -93,32 +95,43 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a style="width: 225px;" class="navbar-brand" href="#"><i class="fa fa-home"></i></a>
+      <a style="width: 225px;" class="navbar-brand" href="#"><i></i></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="font-family: 'Trebuchet MS', cursive, sans-serif; font-size: 16pt; ">
       <ul class="nav navbar-nav">
-        <li style="width: 150px;"><a style="color: rgb(35,98,0);" href="#"><i class="fa fa-building"></i>Inicio</a></li>
-        <li style="width: 175px;"><a style="color: rgb(35,98,0);" href="#"><i class="fa fa-phone"></i>Sobre mi</a></li>
+        <li ><a style="color: rgb(35,98,0);" href="#"><i></i>Inicio</a></li>
+        <li ><a style="color: rgb(35,98,0);" href="#"><i></i>Sobre mi</a></li>
         <li class="dropdown">
-          <a style="width: 140px; color: rgb(35,98,0);" href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-anchor"></i>Blog<span class="caret"></span></a>
+          <a style="color: rgb(35,98,0);" href="#" class="dropdown-toggle" data-toggle="dropdown"><i></i>Blog<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#"><i style="color: rgb(35,98,0);" class="fa fa-envelope"></i>EMAIL</a></li>
-            <li><a href="#"><i style="color: rgb(35,98,0);" class="fa fa-comments"></i>CHAT</a></li>
-            <li><a href="#"><i style="color: rgb(35,98,0);" class="fa fa-phone"></i>PHONE SUPP</a></li>
-            <li class="divider"></li>
-            <li class="active"><a href="#"><i class="fa fa-credit-card"></i> Make a Payment</a></li>
+            <li><a  style="color: rgb(35,98,0); font-size: 12pt;" href="#"><i></i>Información</a></li>
+            <li><a style="color: rgb(35,98,0); font-size: 12pt;" href="#"><i style="color: rgb(35,98,0);"></i>Videos YouTube</a></li>
+            <li><a style="color: rgb(35,98,0); font-size: 12pt;" href="#"><i style="color: rgb(35,98,0);"></i>Postcast</a></li>
+            <!-- <li class="divider"></li>
+            <li class="active"><a href="#"><i class="fa fa-credit-card"></i> Make a Payment</a></li> -->
           </ul>
         </li>
-        <li style="width: 150px;"><a style="color: rgb(35,98,0);" href="#"><i class="fa fa-phone"></i>Gratis</a></li>
-        <li style="width: 150px;"><a style="color: rgb(35,98,0);" href="#"><i class="fa fa-phone"></i>Gratis</a></li>
-        <li style="width: 200px;"><a style="color: rgb(35,98,0);" href="#"><i class="fa fa-phone"></i>Servicios</a></li>
-        <li style="width: 100px;"><a style="color: rgb(35,98,0);" href="#"><i class="fa fa-phone"></i>Contacto</a></li>
+        <li class="dropdown">
+          <a style="color: rgb(35,98,0);" href="#" class="dropdown-toggle" data-toggle="dropdown"><i></i>Gratis<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a style="color: rgb(35,98,0); font-size: 12pt;" href="#"><i ></i>1er. Ebook</a></li>
+          </ul>
+        </li>
 
+        <li class="dropdown">
+          <a style="color: rgb(35,98,0);" href="#" class="dropdown-toggle" data-toggle="dropdown"><i></i>Servicios<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#" style="color: rgb(35,98,0); font-size: 12pt;"><i class="fa fa-credit-card"></i>Coach one to one</a></li>
+            <li><a href="#" style="color: rgb(35,98,0); font-size: 12pt;"><i class="fa fa-credit-card"></i>Mentoria en Emprendimiento Gastronomicos</a></li>
+          </ul>
+        </li>
+        <li ><a style="color: rgb(35,98,0);" href="#"><i></i>Contacto</a></li>
+        <li ><a style="color: rgb(35,98,0);" href="#"><i class=></i>Club Privado</a></li>
         <li><a href="#"><i class="fa fa-twitter color-twitter"></i></a></li>
         <li><a href="#"><i class="fa fa-facebook color-facebook"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin color-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube color-youtube"></i></a></li>
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
@@ -127,19 +140,19 @@
           <ul class="dropdown-menu login-panel">
             <li>
                 <div class="dropdown-header">
-                    <span class="login-header color-blue">Sign In</span>
-                    <span class="forgot-password color-blue"><a href="">Forgot password?</a></span>
+                    <span class="login-header color-orange">Sign In</span>
+                    <span class="forgot-password color-orange"><a href="">Forgot password?</a></span>
                 </div>
                 <div class="clearfix"></div>
                 <div style="padding: 8px;">
                     <form id="loginform" class="form-horizontal" role="form"  autocomplete="off">
                         <div style="margin-bottom: 10px" class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-user color-blue"></i></span>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user color-orange"></i></span>
                             <!-- USERNAME OR EMAIL ADDRESS -->
                             <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email" pattern="[a-zA-Z0-9]{5,}" title="Minimum 5 letters or numbers." oninvalid="this.setCustomValidity('Enter User Name Here')" oninput="setCustomValidity('')" required>                                        
                         </div>
                         <div style="margin-bottom: 10px" class="input-group">
-                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock color-blue"></i></span>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock color-orange"></i></span>
                             <!--  PASSWORD  -->
                             <input id="login-password" type="password" class="form-control" name="password" placeholder="password" pattern=".{5,}" title="Minmimum 5 letters or numbers." oninvalid="this.setCustomValidity('Enter a password')" oninput="setCustomValidity('')" required>
                         </div>
@@ -152,7 +165,7 @@
                         <div style="margin-top:10px" class="form-group">
                             <!-- Button -->
                             <div class="col-sm-12 controls center-text">
-                              <a id="btn-login" href="#" class="btn btn-block btn-success">Login</a>
+                              <a id="btn-login" href="#" class="btn btn-block btn-success" style="background-color: rgb(254,159,0); border-color: rgb(254,159,0);">Login</a>
                               <!--<a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>-->
                             </div>
                         </div>  

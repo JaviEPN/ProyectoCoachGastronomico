@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Coach Gastronómico</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,400,500,700" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
+	<script src="js/jquery.slides.min.js" type="text/javascript"></script>
+	<script src="js/menu.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+      <style type="text/css">
+        /*COLORS*/
+.color-red{color: #FF0000;}
+.color-green{color: #6cbc42;}
+.color-blue{color: #0080c5;}
+.color-twitter{color:#00aced;}
+.color-facebook{color:#00539f;}
+.color-youtube{color:red;}
+.color-orange{color: rgb(254,159,0);}
+
+/*NAVBAR STYLES*/
+
+.navbar {
+	width: 100%;
+}
+.navbar-border{
+	width: 100%;
+	background-color:  white;
+
+	}
+.login-panel { 
+    min-width: 250px; 
+    border-top: 14px solid rgb(254,159,0);
+    border-right: 1px solid rgb(254,159,0);
+    border-bottom-right-radius:0.5em;
+    -moz-border-radius-bottom-right:0.5em;
+    border-bottom: 3px solid rgb(254,159,0);;
+    border-left: 1px solid rgb(254,159,0);;
+    border-bottom-left-radius:0.5em;
+    -moz-border-radius-bottom-left:0.5em;
+    }
+.dropdown-header { display: block !imnportant; padding-bottom: 30px; height: 10px; }
+.login-header { font-size: 20px; font-weight: bold; display: inline; float: left; }
+.forgot-password { font-size: 10px; display: inline; float: right; vertical-align: bottom; padding-top: 10px; }
+.center-text { text-align: center; }
+.error-message { font-size: 11px; }
+    </style>
+</head>
+
+
+<body>
+<div class="modal fade" data-keyboard="false" data-backdrop="static" id="mostrarmodal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="border-top-left-radius: 2em; border-top-right-radius: 2em;">
+           <div class="modal-header">
+          <button onclick="reset();" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h1>¡GUAO...!</h1>
+              <h1>Que bueno que estés por aquí</h1>
+           </div>
+           <div class="modal-body">
+              <h3>Gracias por estar por aquí.</h3>
+              <h3>No te vayas con la manos vacias...</h3>
+              <div class="trans"> 
+  				<button class="btn btn-info btn-responsive btninter centrado">Obten tu ebook, de como emprender exitosamente.</button> 
+			  </div> 
+			  <h3></h3>
+			  <h3></h3>
+       </div>
+           <div class="modal-footer">
+          		<h3><b>CUIDADO:</b> Si pones en acción mi información de valor, en poco tiempo puede que despidas a tu jefe; te conviertas en un empresario exitoso y comiences una vida de prosperidad.</h3>
+           </div>
+      </div>
+   </div>
+</div>
+
+	<header class="nva">
+<div id="cabecera">
+	<img src="imagenes/logo.png">
+</div>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid navbar-border">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a style="width: 225px;" class="navbar-brand" href="#"><i></i></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="font-family: 'Trebuchet MS', cursive, sans-serif; font-size: 16pt; ">
+      <ul class="nav navbar-nav">
+        <li ><a style="color: rgb(35,98,0);" href="#"><i></i>Inicio</a></li>
+        <li ><a style="color: rgb(35,98,0);" href="#"><i></i>Sobre mi</a></li>
+        <li class="dropdown">
+          <a style="color: rgb(35,98,0);" href="#" class="dropdown-toggle" data-toggle="dropdown"><i></i>Blog<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#"><i style="color: rgb(35,98,0);"></i>Información</a></li>
+            <li><a href="#"><i style="color: rgb(35,98,0);"></i>Videos YouTube</a></li>
+            <li><a href="#"><i style="color: rgb(35,98,0);"></i>Postcast</a></li>
+            <li class="divider"></li>
+            <li class="active"><a href="#"><i class="fa fa-credit-card"></i> Make a Payment</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a style="color: rgb(35,98,0);" href="#" class="dropdown-toggle" data-toggle="dropdown"><i></i>Gratis<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#"><i style="color: rgb(35,98,0);"></i>1er. Ebook</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a style="color: rgb(35,98,0);" href="#" class="dropdown-toggle" data-toggle="dropdown"><i></i>Servicios<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#"><i style="color: rgb(35,98,0);" class="fa fa-envelope"></i>Coach one to one</a></li>
+            <li><a href="#"><i style="color: rgb(35,98,0);" class="fa fa-envelope"></i>Mentoria en Emprendimiento Gastronomicos</a></li>
+          </ul>
+        </li>
+        <li ><a style="color: rgb(35,98,0);" href="#"><i></i>Contacto</a></li>
+        <li ><a style="color: rgb(35,98,0);" href="#"><i class=></i>Club Privado</a></li>
+        <li><a href="#"><i class="fa fa-twitter color-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-facebook color-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube color-youtube"></i></a></li>
+      </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cogs"></i> <b style="color: rgb(35,98,0);" >Login</b> <span class="caret"></span></a>
+          <ul class="dropdown-menu login-panel">
+            <li>
+                <div class="dropdown-header">
+                    <span class="login-header color-orange">Sign In</span>
+                    <span class="forgot-password color-orange"><a href="">Forgot password?</a></span>
+                </div>
+                <div class="clearfix"></div>
+                <div style="padding: 8px;">
+                    <form id="loginform" class="form-horizontal" role="form"  autocomplete="off">
+                        <div style="margin-bottom: 10px" class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user color-orange"></i></span>
+                            <!-- USERNAME OR EMAIL ADDRESS -->
+                            <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email" pattern="[a-zA-Z0-9]{5,}" title="Minimum 5 letters or numbers." oninvalid="this.setCustomValidity('Enter User Name Here')" oninput="setCustomValidity('')" required>                                        
+                        </div>
+                        <div style="margin-bottom: 10px" class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock color-orange"></i></span>
+                            <!--  PASSWORD  -->
+                            <input id="login-password" type="password" class="form-control" name="password" placeholder="password" pattern=".{5,}" title="Minmimum 5 letters or numbers." oninvalid="this.setCustomValidity('Enter a password')" oninput="setCustomValidity('')" required>
+                        </div>
+                        <div class="center-text">
+                            <label><input id="login-remember" type="checkbox" name="remember" value="1"> Remember me</label>
+                        </div>
+                        <div class="center-text">
+                            <span class="error-message color-red"><i class="glyphicon glyphicon-warning-sign"></i> Username & password don't match!</span>
+                        </div>
+                        <div style="margin-top:10px" class="form-group">
+                            <!-- Button -->
+                            <div class="col-sm-12 controls center-text">
+                              <a id="btn-login" href="#" class="btn btn-block btn-success" style="background-color: rgb(254,159,0); border-color: rgb(254,159,0);">Login</a>
+                              <!--<a id="btn-fblogin" href="#" class="btn btn-primary">Login with Facebook</a>-->
+                            </div>
+                        </div>  
+                    </form>
+                </div>                
+            </li>
+            <!--<li class="divider"></li>-->
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	</header>		
+	<section id="main">	
+		<h1 style="font-family: 'Impact'; font-size: 18pt; color: rgb(254,159,0); text-align: center;">Sobre el autor</h1>
+
+		<section id="articles_list" style="width: 60%; margin-left: 20%; align-content: center;">
+			<article style="width: 100%; text-align: justify; justify-content: center; font-family: Verdana; font-size: 14pt; color: rgb(51,51,51);">
+				<p class="extract" style="border-top: 2px solid; border-color: rgb(254,159,0); padding-top: 2%; margin-top: 2%;">Sobre el autor
+
+Diego Oña Santos, es quien escribe estas palabras en compañía de un equipo de jóvenes emprendedores, optimistas, y responsable de todos los contenidos que con bastante seriedad, capacidad, cariño y pasión. </p>
+
+<h1 style="color: rgb(254,159,0); font-family: 'Impact'; font-size: 18pt; text-align: center;">Diego Oña Santos</h1>
+
+<ul>
+
+	<li><p class="extract" style="border-top: 2px solid; border-color: rgb(254,159,0); padding-top: 2%; margin-top: 2%;"> Life Coach, por la International Asociation of Coachs, candidato aceptado a obtener el Master Practitioner de Coaching.</li>
+
+<li><p class="extract">Experto en Dirección de Restaurantes Exitosos por la Universidad de Madrid y la Federación Española de Hotelería.</p></li>
+
+<li><p class="extract">NeuroCoaching otorgado por el programa de Biialab – Jurguen Claric NeuroMarketer otorgado por el programa de Biialab – Jurguen Claric.</p></li>
+
+<li><p class="extract">Chef de Cuisine otorgado por el FPAGP</p></li>
+
+<li><p class="extract">Professional Pastry and Baker Chef por la Academia Culinaria del Ecuador.</p></li>
+
+<li><p class="extract">Emprendedor gastronómico con dos negocios gastronómicos.</p></li>
+
+<li><p class="extract">Formador de Formadores, otorgado por la SETEC - Secretaria Técnica del Sistema Nacional de Cualificaciones y Capacitación Profesional.</p></li>
+
+<li><p class="extract">Licenciado en Ciencias de la Educación mención en Comercio Administración</p></li>
+
+<li><p class="extract">Auditor en Sistemas de Gestión de Calidad Normas ISO 9000</p></li>
+
+<li><p class="extract">Capacitaciones en emprendimiento, negocios, redes sociales, marketing, coaching, Mentoring, PNL – Mindfullness - cocina, sanidad alimentaria, inglés, Comercio y Administración de negocios, tanto en el país como en el exterior.</p></li></ul>
+
+<p class="extract">Apasionado de la cocina, de los fogones, de la gastronomía, luchador incansable, optimista imparable, amante de los cambios, experto en rehacer mi vida, experto en salir de crisis de todo tipo y con Maestrías en caer, levantarme, sacudirme el polvo y continuar mi camino. Soy de las que dicen: <B><em>“Quiero, Puedo y me lo merezco”.</em></B> Creo en las personas, en el amor, en las segundas oportunidades, en construir un mañana mejor, en dejar un mundo del mejor que nos recibió, en una mano que ayuda, en un abrazo, y en todo aquello que me provoca una sonrisa.
+
+El mundo está constantemente cambiando (mientras escribo ya cambio muchos avances tecnológicos). Trabajar de una gran empresa líder de su sector en mi país, y de Latinoamérica me ayudo a construir mis horizontes. Leí una vez “Haciendo siempre más de lo mismo, los resultados serán los mismos”, inconforme con el robot que me había convertido sentí la necesidad de cambiar algo. Si queréis revolución y cambio, comienza por revolucionarte en tu interior en tu mente en tu mismo. El camino que estaba transitando no me hacía feliz. El deseo tan grande de lograr ese cambio, acolito para que el Universo trajera hasta a mí todas esas luces a mi vida, que traduje como “oportunidades”. Encontré en el camino de estudiar, prepararse constantemente y compartir la sabiduría adquirida a fuerza de sacrifico, en un nuevo sendero, un camino nuevo, el del aprendizaje. Y me interne en ese campo en caminar hacia ese horizonte espectacular. Y ahora estoy aquí compartiendo mi sabiduría y experiencia, ayudando al que verdaderamente tenga el compromiso de trascender. </p>
+
+<p class="extract">En todo momento tenemos dos opciones: Dar un paso hacia adelante hacia el crecimiento, o dar un paso hacia atrás, y quedarnos en lo cómodo, en lo seguro.</p>
+
+<p class="extract">Ser Chef de un restaurante es, en la actualidad es un cargo de gran importancia y responsabilidad que va más allá de cocinar y mezclar ingredientes, de la creación de la carta y de la organización de la cocina. En la actualidad, un Chef es también un manager o gestor del negocio, que tiene como objetivo no solo satisfacer a los clientes con sus recetas, sino que además debe conseguir y apoyar los resultados del negocio, tanto en lo que respecta a los costes (consumo, personal, compras), como en las ventas (precios, márgenes, etc.) Los Centros de Educación nos prepara y nosotros nos esforzamos para cocinar y servir bien, pero en general tenemos fallas y desconocimientos empresariales. Una de mis misiones es fundamentales, es que me gusta ofrecer ayuda y encontrar soluciones a los profesionales, estudiantes y toda persona que necesite ayuda en el campo del emprendimiento exitoso gastronómico, a valientes emprendedores, valerosos propietarios de negocios gastronómicos, empoderar inspirar a los profesionales para que lideren un negocio que les abra el camino hacia la Libertad y la abundancia que se merecen con consejos, secretos, experiencias, sobre marketing, finanzas y éxito rentable, haciendo uso de nuevas y poderosas herramientas como es con el Coach, PNL, la Inteligencia emocional, y muchas nuevas, para que sean más felices, esa es una de mis fuentes de felicidad.</p>
+<h1 style="color: rgb(254,159,0); font-family: 'Impact'; font-size: 18pt; text-align: center;">Misión</h1>
+<p class="extract" style="border-top: 2px solid; border-color: rgb(254,159,0); padding-top: 2%; margin-top: 2%;">Comprometido en ayudar a transformar vidas de emprendedores, profesionales, organizaciones, involucradas en el maravilloso campo de la gastronomía, para que logren sus metas y objetivos, encontrando y descubriendo mejores soluciones, con ingredientes modernos como es el Coaching, Neurociencias y nuevas más ciencias aplicadas a la gastronomía, <b>desapareciendo miedos, creencias limitantes, empoderar hacia el éxito y la abundancia, a través de nuevas herramientas, métodos y técnicas poderosísimas</b>, garantizado para ser un emprendedor de leyenda que conllevara a mejorar sus ingresos, encontrar la libertad financiera, y Ser exitoso. </p>
+
+<h1 style="color: rgb(254,159,0); font-family: 'Impact'; font-size: 18pt; text-align: center;">Mi objetivo</h1>
+<p class="extract" style="border-top: 2px solid; border-color: rgb(254,159,0); padding-top: 2%; margin-top: 2%;">Inspirar a cada ser humano a conseguir desarrollar su potenciales y capacidades, disfrutar de la vida, haga realidad sus sueños y ser su mejor versión</p>
+
+<h1 style="color: rgb(254,159,0); font-family: 'Impact'; font-size: 18pt; text-align: center;">Visión</h1>
+<p class="extract" style="border-top: 2px solid; border-color: rgb(254,159,0); padding-top: 2%; margin-top: 2%;">Ser agente de Referencia en la región, reconocido en desarrollar y aplicar Coaching Gastronómico, el cual contribuye al desarrollo integral del ser humano, desarrollando las competencias y habilidades que los profesionales y emprendedores de toda la región de habla hispana, que necesitan para poder alcanzar su más alto potencial en el ámbito personal y profesional, elevar su nivel de conocimiento, productividad y calidad de vida de ellos. A través de nuestros eventos, programas de entrenamiento, formación y capacitación.</p>
+
+<h1 style="color: rgb(254,159,0); font-family: 'Impact'; font-size: 18pt; text-align: center;">Valores</h1>
+<p class="extract" style="border-top: 2px solid; border-color: rgb(254,159,0); padding-top: 2%; margin-top: 2%;">
+<h2 style="color: rgb(254,159,0); font-family: 'Impact'; font-size: 18pt; text-align: left; ">Servicio</h2>Ser agente de Referencia en la región, reconocido en desarrollar y aplicar Coaching Gastronómico, el cual contribuye al desarrollo integral del ser humano, desarrollando las competencias y habilidades que los profesionales y emprendedores de toda la región de habla hispana, que necesitan para poder alcanzar su más alto potencial en el ámbito personal y profesional, elevar su nivel de conocimiento, productividad y calidad de vida de ellos. A través de nuestros eventos, programas de entrenamiento, formación y capacitación.</p>
+
+<p class="extract">
+<h2 style="color: rgb(254,159,0); font-family: 'Impact'; font-size: 18pt; text-align: left; ">Pasión</h2>Hacer con más amor del natural, porque lo damos todo</p>
+
+<p class="extract">
+<h2 style="color: rgb(254,159,0); font-family: 'Impact'; font-size: 18pt; text-align: left; ">Confianza</h2>Es el fundamento de toda relación humana.</p>
+
+<p class="extract">
+<h2 style="color: rgb(254,159,0); font-family: 'Impact'; font-size: 18pt; text-align: left; ">Emprender</h2>Porque siempre queda algo por hacer.</p>
+
+<p class="extract">
+<h2 style="color: rgb(254,159,0); font-family: 'Impact'; font-size: 18pt; text-align: left; ">Honestidad</h2>Vital y medular para poder convivir en sociedad.</p>
+
+<p class="extract">
+<h2 style="color: rgb(254,159,0); font-family: 'Impact'; font-size: 18pt; text-align: left; ">Responsabilidad</h2>Es el cumplimiento de las obligaciones con diligencia, seriedad y prudencia.</p>
+
+<p class="extract">
+<h2 style="color: rgb(254,159,0); font-family: 'Impact'; font-size: 18pt; text-align: left; ">Confidencialidad</h2>Fundamento de toda relación humana ser un deber ético.</p>
+
+<p class="extract">
+<h2 style="font-family: 'Verdana'; font-size: 16pt; text-align: center; "><em>Porque el progreso no tiene límites y no nos conformamos con lo posible.</em></h2></p>
+
+			</article>
+		</section>
+	</section>
+	<footer>
+		<!-- <section id="ft_widgets">
+			<section class="widget">
+			<h3>Mencionado en: </h3>
+			<ul>
+				<li><a href="#">Lorem Ipsum</a></li>
+				<li><a href="#">Lorem Ipsum</a></li>
+				<li><a href="#">Lorem Ipsum</a></li>
+				<li><a href="#">Lorem Ipsum</a></li>
+				<li><a href="#">Lorem Ipsum</a></li>
+			</ul>
+			</section>
+		</section> -->
+		<p id="copyright">Copyright © 2017 TotalPC 
+		</p>
+		<p>
+		 All rights reserved
+		</p>
+		<p>
+		Developed by  · Alex Pinaida
+		</p>
+	</footer>
+</body>
+</html>
