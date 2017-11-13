@@ -13,4 +13,8 @@ https://www.youtube.com/watch?v=sr96OUdWD4w
 menu responsive
 
 https://www.youtube.com/watch?v=EB4BG3QZn3o
-asdasd
+
+Conexion BDD WP
+
+https://codex.wordpress.org/Class_Reference/wpdb
+http://www.forosdelweb.com/f118/guardar-datos-base-datos-wp-traves-formulario-1091013/
