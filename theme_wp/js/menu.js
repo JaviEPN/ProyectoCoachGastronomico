@@ -1,10 +1,10 @@
 $(document).ready(function() {
-	var altura = $('.menu').offset().top;
+	var altura = $('.navbar-border').offset().top;
 	$(window).on('scroll', function() {
 		if ($(window).scrollTop()>altura){
-			$('.menu').addClass('menu-fixed');
+			$('.navbar-border').addClass('menu-fixed');
 		} else {
-			$('.menu').removeClass('menu-fixed');
+			$('.navbar-border').removeClass('menu-fixed');
 		}
 	});
 
@@ -15,16 +15,14 @@ $('.menu_bar').click(function() {
 		//$('nav').toggle();
 		if (contador==1){
 			$('nav').animate({
-				top: '0'
+				left: '0'
 			});
 			contador = 0;
-			$('#slideshow').addClass('menuslide-fixed');
 		} else {
 			contador = 1;
 			$('nav').animate({
-				top: '-100%'
+				left: '-100%'
 			});
-			$('#slideshow').removeClass('menuslide-fixed');
 		}
 	});
 });
