@@ -10,7 +10,8 @@ $(document).ready(function() {
 });
 
 function mostrarModal (){
-$("#mostrarmodalAcceso").modal("show");	
+$("#mostrarmodalAcceso").modal("show");
+repeticion = window.clearInterval(repeticion);	
 }
 
 function reFresh()
